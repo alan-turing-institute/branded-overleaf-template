@@ -15,28 +15,16 @@
 \usepackage{sectsty} % change section colours
 \newcommand{\footergrey}{black!60} %footer text
 \newcommand{\tablegrey}{black!10} %table row separator
-\newcommand{\sectioncolor}{DodgerBlue3} %section headings color
 % colors taken from http://texdoc.net/texmf-dist/doc/latex/xcolor/xcolor.pdf page 39
 \newcommand{\titlecolor}{\color{DodgerBlue4}}
 
-%% fonts used (ref: http://www.khirevich.com/latex/font/)
-\renewcommand*\sfdefault{lmss} %latin modern sans serif
 
+%% fonts used: bitstream charter and TEX Gyre Heros (ref: http://www.khirevich.com/latex/font/)
 
-% to change to arial use fontspec package. Haven't debugged how to change sections with the fontspec package
-%\usepackage{fontspec}
-
-% Arial
-%\setsansfont[
-%BoldFont=arialbd.ttf,
-%ItalicFont=ariali.ttf,
-%BoldItalicFont=arialbi.ttf
-%]{arial.ttf}
-
-\renewcommand*\familydefault{\sfdefault} %change default text to a sans serif font
-\newcommand{\titlefont}{phv} %see https://www.overleaf.com/learn/latex/font_typefaces
-\sectionfont{\usefont{T1}{phv}{b}{n}\selectfont\color{\sectioncolor}} %qhv = TEX Gyre Heros
-\subsectionfont{\usefont{T1}{phv}{b}{n}\selectfont\color{\sectioncolor}}
+\renewcommand*\familydefault{bch} 
+\newcommand{\titlefont}{qhv} %see https://www.overleaf.com/learn/latex/font_typefaces
+\sectionfont{\usefont{T1}{qhv}{b}{n}\selectfont} %qhv = TEX Gyre Heros
+\subsectionfont{\usefont{T1}{qhv}{b}{n}\selectfont}
 
 
 
@@ -56,8 +44,8 @@
                 % layouthoffset=0.1875in,% two column
                 layouthoffset=0.4675in,% single column
              %   layoutvoffset=0.0625in,%
-                left=40pt,%
-                right=40pt,%
+                left=.5in,%
+                right=.5in,%
                 top=10pt,% 10pt provided by headsep
                 bottom=40pt,%
                 headheight=0pt,% No Header
@@ -66,8 +54,9 @@
                 marginparwidth=38pt
 }
 
-\setlength{\parskip}{1em}
-\setlength{\parindent}{0cm} % Paragraph indent
+%change paragraph separater and indent
+%\setlength{\parskip}{1em}
+%\setlength{\parindent}{0cm} % Paragraph indent
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
