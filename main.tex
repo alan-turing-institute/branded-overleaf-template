@@ -1,0 +1,21 @@
+\documentclass[9pt, table, x11names, twocolumn]{article} 
+
+%%%%%%%% FOR EDITORS %%%%%%%%%%
+% body.tex - main document content
+% abstract.tex - title, affiliations and abstract for an academic paper
+% branding.sty - preamble formatting specific to branded report (here you can change fonts, colours, etc).
+% frontmatter.tex - loads branded report pages found in the branding folder
+
+\usepackage{branding}
+
+\begin{document}
+
+\togglecolumns %no need to uncomment. Suppresses two columns for report but leave two columns for preprint
+
+\input{frontmatter} 
+
+\input{abstract} %title, authors and abstract
+
+\input{body} % main document
+
+\end{document}
